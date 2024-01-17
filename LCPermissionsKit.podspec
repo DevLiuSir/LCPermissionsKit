@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LCPermissionsKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "LCPermissionsKit is a convenient wrapper on the macOS permissions API"
 
   # This description is used to generate tags and improve search results.
@@ -96,8 +96,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = ["LCPermissionsKit/**/*.swift"]
+  # spec.source_files  = ["LCPermissionsKit/**/*.swift"]
   
+
+  spec.source_files = 'LCPermissionsKit/Private/**/*.{h,m,swift}', 'LCPermissionsKit/Pubilc/**/*.{h,m,swift}'
   # spec.source_files  = "LCPermissionsKit/Public/**/*", "LCPermissionsKit/Private/**/*"
   # spec.exclude_files = "LCPermissionsKit/Exclude"
   # spec.public_header_files = 'LCPermissionsKit/Public/**/*.h', 'LCPermissionsKit/PermissionsKit.h'
