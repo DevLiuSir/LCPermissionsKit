@@ -98,8 +98,8 @@ Pod::Spec.new do |spec|
 
   # spec.source_files  = ["LCPermissionsKit/**/*.swift"]
   
-
-  spec.source_files = 'LCPermissionsKit/Private/**/*.{h,m,swift}', 'LCPermissionsKit/Pubilc/**/*.{h,m,swift}'
+  spec.source_files  = ["Sources/**/*.swift"]
+  # spec.source_files = 'LCPermissionsKit/Private/**/*.{h,m,swift}', 'LCPermissionsKit/Pubilc/**/*.{h,m,swift}'
   # spec.source_files  = "LCPermissionsKit/Public/**/*", "LCPermissionsKit/Private/**/*"
   # spec.exclude_files = "LCPermissionsKit/Exclude"
   # spec.public_header_files = 'LCPermissionsKit/Public/**/*.h', 'LCPermissionsKit/PermissionsKit.h'
