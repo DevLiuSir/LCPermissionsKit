@@ -1,0 +1,16 @@
+PODS:
+  - LCPermissionsKit (1.0.1)
+
+DEPENDENCIES:
+  - LCPermissionsKit (~> 1.0.1)
+
+SPEC REPOS:
+  trunk:
+    - LCPermissionsKit
+
+SPEC CHECKSUMS:
+  LCPermissionsKit: 8df7ad94808bfd11aa284ae63b7ce093cd8d153c
+
+PODFILE CHECKSUM: 8af6fc69e107ecacce25108b17546edbaa29c0e5
+
+COCOAPODS: 1.14.2

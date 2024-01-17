@@ -1,0 +1,6 @@
+framework module LCPermissionsKit {
+  umbrella header "LCPermissionsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
