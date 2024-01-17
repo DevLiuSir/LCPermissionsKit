@@ -9,7 +9,7 @@ import Foundation
 
 
 /// 授权状态
-enum LCAuthorizationStatus: Int {
+public enum LCAuthorizationStatus: Int {
     /// 未确定状态，用户尚未做出授权选择
     case notDetermined
     /// 拒绝授权状态，用户明确拒绝了权限

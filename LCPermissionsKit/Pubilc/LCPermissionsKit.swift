@@ -8,7 +8,10 @@
 import Foundation
 
 
-class LCPermissionsKit: NSObject {
+public class LCPermissionsKit: NSObject {
+    
+    /// 单列
+    public static let shared = LCPermissionsKit()
     
     /// `权限类型`对应的`授权器集合`
     private static let authorizers: [LCPermissionType: LCAuthorizer] = [
@@ -19,9 +22,9 @@ class LCPermissionsKit: NSObject {
         .fullDiskAccess: LCFullDiskAccessAuthorizer()
     ]
     
-    /// 获取指定权限类型的授权状态
-    static func authorizationStatus(for permissionType: LCPermissionType) -> LCAuthorizationStatus {
-        guard let authorizer = authorizers[permissionType] else {
+    /// 获取`指定权限类型`的`授权状态`
+    public func authorizationStatus(for permissionType: LCPermissionType) -> LCAuthorizationStatus {
+        guard let authorizer = LCPermissionsKit.authorizers[permissionType] else {
             fatalError("无法找到类型为 \(permissionType) 的授权器")
         }
         return authorizer.authorizationStatus()
@@ -32,8 +35,8 @@ class LCPermissionsKit: NSObject {
     /// - Parameters:
     ///   - permissionType: 要请求授权的权限类型
     ///   - completionHandler: 授权请求完成后的回调，返回授权状态
-    static func requestAuthorization(for permissionType: LCPermissionType, withCompletion completionHandler: @escaping (LCAuthorizationStatus) -> Void) {
-        guard let authorizer = authorizers[permissionType] else {
+    public func requestAuthorization(for permissionType: LCPermissionType, withCompletion completionHandler: @escaping (LCAuthorizationStatus) -> Void) {
+        guard let authorizer = LCPermissionsKit.authorizers[permissionType] else {
             fatalError("无法找到类型为 \(permissionType) 的授权器")
         }
         authorizer.requestAuthorization(withCompletion: completionHandler)

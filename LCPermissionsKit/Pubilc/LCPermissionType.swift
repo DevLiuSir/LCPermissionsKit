@@ -8,7 +8,7 @@
 import Foundation
 
 /// 权限类型
-enum LCPermissionType: Int {
+public enum LCPermissionType: Int {
     /// 日历权限
     case calendar = 0
     /// 提醒事项权限
