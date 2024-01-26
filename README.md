@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<img src="./Design/LCPermissionsKit-03.png">
+<img src="./Design/LCPermissionsKit.png">
 
 <p align="center"> <b> LCPermissionsKit is a convenient wrapper on the macOS permissions API, including photos, contacts, reminders, and full disk access permissions</b></p>
 
