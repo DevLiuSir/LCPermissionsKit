@@ -7,9 +7,15 @@
 
 
 <p align="center">
+  <a href="https://swiftpackageindex.com/DevLiuSir/LCPermissionsKit">
+        <img src="https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/DevLiuSir/LCPermissionsKit/badge?type=swift-versions" alt="Swift Versions">
+    </a>
+    <a href="https://swiftpackageindex.com/DevLiuSir/LCPermissionsKit">
+        <img src="https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/DevLiuSir/LCPermissionsKit/badge?type=platforms" alt="Supported Platforms">
+    </a>
+    
 <img src="https://badgen.net/badge/icon/apple?icon=apple&label">
 <img src="https://img.shields.io/badge/language-swift-orange.svg">
-<a href="https://developer.apple.com/swift/"><img src="https://img.shields.io/badge/swift-5.3+-blue.svg?style=flat"></a>
 <img src="https://img.shields.io/badge/xcode-14.2+-yellow.svg">
 <img src="https://img.shields.io/badge/macOS10.13+-blue.svg">
 <img src="https://img.shields.io/badge/build-passing-brightgreen">
