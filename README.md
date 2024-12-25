@@ -17,7 +17,7 @@
 <img src="https://badgen.net/badge/icon/apple?icon=apple&label">
 <img src="https://img.shields.io/badge/language-swift-orange.svg">
 <img src="https://img.shields.io/badge/xcode-14.2+-yellow.svg">
-<img src="https://img.shields.io/badge/macOS10.13+-blue.svg">
+<img src="https://img.shields.io/badge/macOS-10.13+-blue.svg">
 <img src="https://img.shields.io/badge/build-passing-brightgreen">
 <img src="https://img.shields.io/github/languages/top/DevLiuSir/LCPermissionsKit?color=blueviolet">
 <img src="https://img.shields.io/github/license/DevLiuSir/LCPermissionsKit.svg">
@@ -47,14 +47,6 @@ Current implementation supports permissions for:
 * [Full Disk Access](#full-disk-access)
 
 
-## Usage
-
-```swift
- LCPermissionsKit.shared.requestAuthorization(for: .fullDiskAccess) { status in
-	print(status)   
-}
-```
-
 
 ## Permission Type
 
@@ -65,6 +57,36 @@ public enum LCPermissionType: Int {
     case contacts
     case photos
     case fullDiskAccess
+}
+```
+
+
+
+## Usage
+
+
+- Checking permission status
+
+```swift
+let status = LCPermissionsKit.shared.authorizationStatus(for: .fullDiskAccess)
+switch status {
+case .authorized:
+    print("authorized")
+case .notDetermined:
+    print("notDetermined")
+case .denied:
+    print("denied")
+case .limited:
+    print("limited")
+}
+```
+
+
+- Request Permission
+
+```swift
+LCPermissionsKit.shared.requestAuthorization(for: .fullDiskAccess) { status in
+	print(status)   
 }
 ```
 

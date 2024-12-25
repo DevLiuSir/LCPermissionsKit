@@ -17,7 +17,7 @@
 <img src="https://badgen.net/badge/icon/apple?icon=apple&label">
 <img src="https://img.shields.io/badge/language-swift-orange.svg">
 <img src="https://img.shields.io/badge/xcode-14.2+-yellow.svg">
-<img src="https://img.shields.io/badge/macOS10.13+-blue.svg">
+<img src="https://img.shields.io/badge/macOS-10.13+-blue.svg">
 <img src="https://img.shields.io/badge/build-passing-brightgreen">
 <img src="https://img.shields.io/github/languages/top/DevLiuSir/LCPermissionsKit?color=blueviolet">
 <img src="https://img.shields.io/github/license/DevLiuSir/LCPermissionsKit.svg">
@@ -46,13 +46,6 @@
 * [Full Disk Access](#full-disk-access)
 
 
-## 使用
-
-```swift
- LCPermissionsKit.shared.requestAuthorization(for: .fullDiskAccess) { status in
-	print(status)   
-}
-```
 
 
 ## 权限类型
@@ -66,6 +59,35 @@ public enum LCPermissionType: Int {
     case fullDiskAccess
 }
 ```
+
+
+
+## 使用
+
+- 检查权限状态
+
+```swift
+let status = LCPermissionsKit.shared.authorizationStatus(for: .fullDiskAccess)
+switch status {
+case .authorized:
+    print("authorized")
+case .notDetermined:
+    print("notDetermined")
+case .denied:
+    print("denied")
+case .limited:
+    print("limited")
+}
+```
+
+- 请求权限
+
+```swift
+ LCPermissionsKit.shared.requestAuthorization(for: .fullDiskAccess) { status in
+	print(status)   
+}
+```
+
 
 
 
