@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   
   spec.osx.deployment_target = "10.13"
 
-  spec.source       = { :git => "https://github.com/DevLiuSir/LCPermissionsKit.git", :tag => "#{spec.version}"
+  spec.source       = { :git => "https://github.com/DevLiuSir/LCPermissionsKit.git", :tag => "#{spec.version}" }
 
   spec.source_files = "LCPermissionsKit/**/*.{h,m,swift}"
   
