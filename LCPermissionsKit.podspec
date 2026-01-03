@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "LCPermissionsKit"
   
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   
   spec.summary      = "LCPermissionsKit is a convenient wrapper on the macOS permissions API"
   
