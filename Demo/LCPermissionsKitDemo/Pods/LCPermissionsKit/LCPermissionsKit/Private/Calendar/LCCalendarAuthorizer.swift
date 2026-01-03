@@ -43,6 +43,10 @@ class LCCalendarAuthorizer: NSObject {
             return .authorized
         case .notDetermined:
             return .notDetermined
+        case .fullAccess:
+            return .authorized
+        case .writeOnly:
+            return .limited
         @unknown default:
             return .notDetermined
         }
