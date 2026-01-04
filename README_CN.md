@@ -142,6 +142,16 @@ MIT License
 Copyright (c) 2024 Marvin
 
 
+
+## 星级历史
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=DevLiuSir/LCPermissionsKit&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=DevLiuSir/LCPermissionsKit&type=Date" />
+  <img alt="GPRG Star History Chart" src="https://api.star-history.com/svg?repos=DevLiuSir/LCPermissionsKit&type=Date" />
+</picture>
+
+
+
 ## 作者
 
 | [<img src="https://avatars2.githubusercontent.com/u/11488337?s=460&v=4" width="120px;"/>](https://github.com/DevLiuSir)  |  [DevLiuSir](https://github.com/DevLiuSir)<br/><br/><sub>Software Engineer</sub><br/> [<img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" height="20" width="20"/>][1] [<img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" height="20" width="20"/>][2] [<img align="center" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" height="20" width="20"/>][3]|
